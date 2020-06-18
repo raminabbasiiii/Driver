@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <inset android:insetRight="2dp" android:insetLeft="2dp" android:insetBottom="2dp">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/btn_insert_trip_solid"/>
+                <corners android:radius="16dp"/>
+            </shape>
+        </inset>
+    </item>
+
+</selector>

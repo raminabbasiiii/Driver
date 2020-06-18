@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/constraint_sheet"
+    app:behavior_hideable="true"
+    android:background="@drawable/navigation_bottom_sheet_background">
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="خلاصه مسیر"
+        android:textColor="@color/text_input_layout"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="زمان رسیدن"
+        android:textColor="@color/text_input_layout"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_insert_path"
+        app:layout_constraintEnd_toStartOf="@+id/tv_distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="مسافت"
+        android:textColor="@color/text_input_layout"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_driving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_duration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary" />
+
+    <Button
+        android:id="@+id/btn_insert_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_in_navigation_bottom_sheet_background"
+        android:gravity="center"
+        android:text="@string/btn_send_to_insert_trip"
+        android:onClick="btnInsertPathOnClick"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_driving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration" />
+
+    <Button
+        android:id="@+id/btn_driving"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_in_navigation_bottom_sheet_background"
+        android:gravity="center"
+        android:text="رانندگی"
+        android:onClick="btnDrivingOnClick"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_insert_path"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distance" />
+
+</android.support.constraint.ConstraintLayout>

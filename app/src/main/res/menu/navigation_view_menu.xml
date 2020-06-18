@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:title="@string/calculator_title"
+            android:icon="@drawable/zero"
+            android:id="@+id/calculating" />
+
+        <item
+            android:title="@string/trips_title"
+            android:icon="@drawable/trips"
+            android:id="@+id/trips" />
+
+        <item
+            android:title="@string/comments_title"
+            android:icon="@drawable/comment"
+            android:id="@+id/comments"/>
+
+        <item
+                android:title="@string/settings"
+                android:icon="@drawable/settings"
+                android:id="@+id/settings"/>
+
+        <item
+                android:title="@string/about_me"
+                android:icon="@drawable/about_me"
+                android:id="@+id/about_me"/>
+
+        <item
+                android:title="@string/exit"
+                android:icon="@drawable/exit"
+                android:id="@+id/exit"/>
+
+</menu>

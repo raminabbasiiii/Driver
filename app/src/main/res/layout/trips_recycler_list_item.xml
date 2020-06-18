@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:contentPadding="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_origin_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date_time_doing_trips"
+            app:layout_constraintEnd_toStartOf="@+id/tv_to_trips"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_to_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_to_registered"
+            android:textColor="@color/text_view_in_registered_trip_recycler"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date_doing_trips"
+            app:layout_constraintEnd_toStartOf="@+id/tv_destination_trips"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_origin_trips"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_destination_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date_doing_trips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_to_trips"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_date_time_doing_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_date_time_doing_transaction"
+            android:textColor="@color/text_view_in_registered_trip_recycler"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_trip_number_trips"
+            app:layout_constraintEnd_toStartOf="@+id/tv_date_doing_trips"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_origin_trips" />
+
+        <TextView
+            android:id="@+id/tv_date_doing_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_trip_id_trips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_date_time_doing_trips"
+            app:layout_constraintTop_toBottomOf="@+id/tv_to_trips" />
+
+
+        <TextView
+            android:id="@+id/tv_trip_number_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_trip_number_registered"
+            android:textColor="@color/text_view_in_registered_trip_recycler"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_number_of_passenger"
+            app:layout_constraintEnd_toStartOf="@+id/tv_trip_id_trips"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_time_doing_trips" />
+
+        <TextView
+            android:id="@+id/tv_trip_id_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_count_passenger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_trip_number_trips"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_doing_trips" />
+
+        <TextView
+            android:id="@+id/tv_number_of_passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_number_of_passenger"
+            android:textColor="@color/text_view_in_registered_trip_recycler"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_count_passenger"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_trip_number_trips" />
+
+        <TextView
+            android:id="@+id/tv_count_passenger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_number_of_passenger"
+            app:layout_constraintTop_toBottomOf="@+id/tv_trip_id_trips" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

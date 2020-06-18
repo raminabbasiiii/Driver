@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/et_user_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:theme="@style/TextInputLayoutTheme"
+        android:textColorHint="@color/text_color_hint_input_layout"
+        app:hintTextAppearance="@style/TextInputLayoutHint"
+        app:errorTextAppearance="@style/ErrorTextInputLayoutStyle"
+        app:layout_constraintBottom_toTopOf="@+id/et_password_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user_name"
+            android:hint="@string/user_name"
+            android:drawablePadding="20dp"
+            android:inputType="text"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/et_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/text_color_hint_input_layout"
+        android:theme="@style/TextInputLayoutTheme"
+        app:hintTextAppearance="@style/TextInputLayoutHint"
+        app:errorTextAppearance="@style/ErrorTextInputLayoutStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_name_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/text_color_hint_input_layout">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:drawablePadding="20dp"
+            android:textColor="@color/text_input_layout"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_login_background"
+        android:gravity="center"
+        android:onClick="onBtnLoginClick"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

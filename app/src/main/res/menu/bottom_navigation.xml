@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bn_insertTrip"
+        android:icon="@drawable/add"
+        android:title="@string/main_bottom_nav_insert_trip" />
+
+    <item
+        android:id="@+id/bn_registered_trips"
+        android:title="@string/main_bottom_nav_registered_trips"
+        android:icon="@drawable/trips"/>
+
+    <item
+        android:id="@+id/bn_path"
+        android:icon="@drawable/navigation"
+        android:title="@string/main_bottom_nav_path" />
+    <item
+        android:id="@+id/bn_passengerList"
+        android:icon="@drawable/list"
+        android:title="@string/main_bottom_passengers_list" />
+
+</menu>

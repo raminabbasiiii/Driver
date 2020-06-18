@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d50000</color>
+    <color name="colorPrimaryDark">#d50000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="main_activity_background">#F5F5F5</color>
+    <color name="main_bottom_nav_background">#F5F5F5</color>
+    <color name="main_bottom_nav_text_icon_checked_false">#616161</color>
+    <color name="main_frame_layout">#FFFFFF</color>
+    <color name="text_input_layout">#000000</color>
+    <color name="text_color_hint_input_layout">#9E9E9E</color>
+    <color name="btn_insert_trip_solid">#43A047</color>
+    <color name="text_view_in_registered_trip_recycler">#757575</color>
+    <color name="recycler_view_background">#EEEEEE</color>
+    <color name="negative_button_text">#ffffff</color>
+    <color name="negative_button_background">#1E88E5</color>
+    <color name="positive_button_background">#E0E0E0</color>
+    <color name="text_view_in_calculator_activity">#757575</color>
+    <color name="btn_login_solid">#e57373</color>
+    <color name="darkPrimaryColor">#0d344c</color>
+    <color name="lightPrimaryColor">#2a5778</color>
+    <color name="primaryColor">#40A3C3</color>
+    <color name="accentColor">#42c29d</color>
+</resources>
